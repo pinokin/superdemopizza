@@ -1,0 +1,76 @@
+body {
+}
+
+/* PIZZA MENU styles */
+#pizza_menu .figure {
+  float: right;
+  margin-bottom: 0.5em;
+  margin-right: 2.85714285714286%;  /* 20px / 700px = 0.0285714285714286 */
+  width: 17.71428571428571%;  /* 124px / 700px = 0.1771428571428571 */
+}
+
+#pizza_menu li {
+    list-style-type: none;
+}
+
+/* SHOPPING CART styles */
+#shopping_cart li {
+    list-style-type: none;
+}
+
+.checkout_state #shopping_cart .button_container,
+.order_confirmation_state #shopping_cart .button_container {
+    display: none;
+}
+
+.narrow #shopping_cart {
+    /*width: 400px;*/
+}
+.narrow.normal_state #shopping_cart h3 {
+    float: left;
+    width: 65%;
+}
+.narrow.normal_state #shopping_cart .button_container {
+    /*float: right;*/
+    width: 34%;
+}
+.narrow.normal_state #shopping_cart_items {
+    display: none;
+}
+
+/* GENERAL styles */
+.hide {
+    display: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.button {
+   border-top: 1px solid #96d1f8;
+   background: #65a9d7;
+   padding: 0.5em 1em;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+   color: white;
+   font-size: 1em;
+   text-decoration: none;
+   vertical-align: middle;
+   cursor: pointer;
+   }
+.button:hover {
+   border-top-color: #28597a;
+   background: #28597a;
+   color: #ccc;
+   }
+.button:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }
+
+/* VALIDATION styles */
+input.form-control.error {
+    border: 1px solid #ffd800;
+}

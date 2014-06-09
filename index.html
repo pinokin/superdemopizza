@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Super Demo Pizza - The Best Pizza Anywhere!</title>
+
+        <!-- jQuery -->
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+
+        <!-- Bootstrap -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+       
+        <!-- Own files -->
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <div id="page">
+            <div id="title">
+                <h1>Super Demo Pizza</h1>
+                <h2>The Best Pizza Anywhere!</h2>
+            </div>
+            <div id="content">
+                <div id="shopping_cart" class="side_content">
+                    <h3>Shopping Cart</h3>
+                    <ul id="shopping_cart_items">
+                        <li id="empty_cart">No yummy pizzas in the cart. Yet.</li>
+                    </ul>
+                    <div class="button_container">
+                        <span class="button checkout">Checkout</span>
+                    </div>
+                </div> <!-- END shopping_cart -->
+                <div id="order_history" class="hide">
+                    <div>
+                        <a id="show_order_history">Show order history</a>
+                    </div>
+                    <div class="history_data hide">
+                        <h3>Order history</h3>
+                        <ul>
+                            <li>No sinister pizza activity in the past.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="pizza_menu" class="main_content">
+                    <h3>Menu</h3>
+                    <ul>
+                        <li>
+                            <div class="pizza">
+                                <h4>SuperPizza</h4>
+                                <span class="button add_to_cart">Add to cart</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pizza">
+                                <h4>MegaPizza</h4>
+                                <span class="button add_to_cart">Add to cart</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pizza">
+                                <h4>HyperPizza</h4>
+                                <span class="button add_to_cart">Add to cart</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pizza">
+                                <h4>GigaPizza</h4>
+                                <span class="button add_to_cart">Add to cart</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pizza">
+                                <h4>DemoPizza</h4>
+                                <span class="button add_to_cart">Add to cart</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="checkout" class="full_content">
+                    <h3>Delivery Information</h3>
+                    <form id="order_form" role="form" autocomplete="on">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="form_name" class="form-control" placeholder="First Last" autofocus required />
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Street address *</label>
+                            <input type="text" id="address" name="form_address" class="form-control" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="zip">Zip code *</label>
+                            <input type="number" id="zip" name="form_zip" class="form-control" pattern="[0-9]{5}" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="city">City *</label>
+                            <input type="text" id="city" name="form_city" class="form-control" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone number *</label>
+                            <input type="tel" id="phone" name="form_phone" class="form-control" placeholder="040-123 4567" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="form_email" class="form-control" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="note">Note</label>
+                            <textarea id="note" name="form_note" class="form-control" rows="5" placeholder="Any notes for the pizza maker?"></textarea>
+                        </div>
+                        <input class="button place_order" type="submit" value="Place order">
+                        <input class="button cancel_order" type="reset" value="Cancel order">
+                    </form>
+                </div>
+                <div id="order_confirmation" class="full_content">
+                    <h3>And they will be delivered here:</h3>
+                    <div id="confirmed_delivery_address"></div>
+                    <div class="button_container">
+                        <span class="button complete_order">Return to front page</span>
+                        <span class="button cancel_order">Cancel order</span>
+                    </div>
+                </div>
+            </div> <!-- END content -->
+        </div> <!-- END page -->
+    </body>
+</html>

@@ -1,0 +1,34 @@
+#title {
+    margin-left: 14.575%;  /* 144px / 988px = 0.14575 */
+    width: 70.85%;  /* 700px / 988px = 0.7085 */
+}
+
+#page {
+    margin: 40px auto;
+    padding: 0 1em;
+    max-width: 61.75em;  /* 988px / 16px = 61.75em */
+}
+
+.full_content {
+    width: 100%;
+}
+
+.main_content {
+    float: left;
+    width: 70.85%;  /* 700px / 988px = 0.7085 */
+}
+
+.side_content {
+    float: right;
+    width: 27.12550607287449%;  /* 268px / 988px = 0.2712550607287449 */
+}
+
+@media all and (max-width: 700px) {
+    .main_content {
+        width: 100%;
+    }
+
+    .side_content {
+        width: 100%;
+    }
+}
