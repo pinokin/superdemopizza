@@ -1,9 +1,9 @@
 {
 "pizzas":[
-    {"name":"SuperPizza2", "price":"6.60"}, 
-    {"name":"MegaPizza2", "price":"6.60"},
-    {"name":"HyperPizza2", "price":"6.60"},
-    {"name":"GigaPizza2", "price":"6.60"},
-    {"name":"DemoPizza2", "price":"5.00"}
+    {"name":"SuperPizza Family Size", "price":"12.50"}, 
+    {"name":"MegaPizza Family Size", "price":"12.50"},
+    {"name":"HyperPizza Family Size", "price":"12.50"},
+    {"name":"GigaPizza Family Size", "price":"12.50"},
+    {"name":"DemoPizza Family Size", "price":"9.00"}
 ]
 }

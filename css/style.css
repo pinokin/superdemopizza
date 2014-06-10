@@ -1,41 +1,160 @@
 body {
+	font-family: 'Neucha', cursive;
+	background-color: #fff;
+}
+
+#page {
+	background: url("../img/pizza.png") no-repeat 98% 1em;
+	border: 2px solid #ffd800;
+	border-radius: 1em;
+	padding-bottom: 2em;
+}
+
+#page.normal_state {
+	background: url("../img/pizza.png") no-repeat right center;
+	padding-bottom: 0;
+}
+
+h1 {
+	color: #8C543B;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-family: 'Swanky and Moo Moo', cursive;
+	margin-top: -0.5em;
+}
+
+h3, h4 {
+	text-transform: uppercase;
+}
+
+ul {
+    list-style-type: none;
+	margin: 0px;
+	padding: 0px;
 }
 
 /* PIZZA MENU styles */
 #pizza_menu .figure {
-  float: right;
-  margin-bottom: 0.5em;
-  margin-right: 2.85714285714286%;  /* 20px / 700px = 0.0285714285714286 */
+  float: left;
+  margin: 0.5em;
   width: 17.71428571428571%;  /* 124px / 700px = 0.1771428571428571 */
 }
 
-#pizza_menu li {
-    list-style-type: none;
+#pizza_menu .pizza {
+	border: 2px solid #8C543B;
+	border-radius: 1em;
+	width: 100%;
+	height: 10em;
+	margin-bottom: 0.3em;
+	padding: 0.5em;
+}
+.pizza .price {
+	margin-bottom: 1em;
+}
+
+.pizza:hover {
+	background-color: Ivory;
 }
 
 /* SHOPPING CART styles */
+#shopping_cart .figure {
+  float: left;
+  margin: 0 0.5em;
+  width: 30%;
+}
+
+.checkout_state #shopping_cart .figure,
+.order_confirmation_state #shopping_cart .figure {
+	width: 5%;
+}
+
 #shopping_cart li {
-    list-style-type: none;
+	width: 100%;
+	margin-bottom: 0.3em;
+	padding: 0.2em;
+	height: 6em;
+}
+
+.normal_state #shopping_cart li:hover {
+	border: 1px solid #8C543B;
+	border-radius: 0.5em;
+}
+
+#shopping_cart li .pizza:hover {
+	background: #fff;
+}
+
+#shopping_cart li#empty_cart {
+	margin-top: 0.5em;
+	height: 2em;
+}
+
+#shopping_cart li#empty_cart:hover {
+	border: 0;
+}
+
+
+.checkout_state #shopping_cart li,
+.order_confirmation_state #shopping_cart li {
+	height: 4em;
 }
 
 .checkout_state #shopping_cart .button_container,
-.order_confirmation_state #shopping_cart .button_container {
+.order_confirmation_state #shopping_cart .button_container,
+.order_confirmation_state #shopping_cart .link_button {
     display: none;
 }
 
-.narrow #shopping_cart {
-    /*width: 400px;*/
+.normal_state #shopping_cart {
+	border: 2px solid #ffd800;
+	border-radius: 1em;
+	padding: 0.5em 0.5em 2em 0.5em;
+	margin-top: 4.0em;
 }
-.narrow.normal_state #shopping_cart h3 {
-    float: left;
-    width: 65%;
+
+.narrow.normal_state #shopping_cart {
+	margin: 2em 0 1em 0;
+	padding: 1em;
 }
-.narrow.normal_state #shopping_cart .button_container {
-    /*float: right;*/
-    width: 34%;
+
+.narrow.normal_state #shopping_cart h3,
+.narrow.normal_state #shopping_cart .button_container,
+.narrow.normal_state #shopping_cart .link_button {
+    display: inline;
+	margin-right: 1em;
 }
+
 .narrow.normal_state #shopping_cart_items {
     display: none;
+}
+
+.button_container {
+	margin-top: 2em;
+}
+
+/* ORDER HISTORY styles */
+.button.order_history {
+	display: inline-block;
+	margin-top: 1em;
+}
+
+.narrow .button.order_history {
+	display: inline;
+	margin-left: 0.5em;
+}
+
+.order_history_items li {
+	margin-bottom: 1em;
+}
+
+.cart_items li {
+	margin-left: 1em;
+}
+
+.pagination .current {
+	font-weight: bold;
 }
 
 /* GENERAL styles */
@@ -48,27 +167,39 @@ img {
 }
 
 .button {
-   border-top: 1px solid #96d1f8;
-   background: #65a9d7;
+   /*border-top: 1px solid #8C543B;*/
+   background: #ffd800;
    padding: 0.5em 1em;
    -webkit-border-radius: 5px;
    -moz-border-radius: 5px;
    border-radius: 5px;
-   color: white;
-   font-size: 1em;
+   color: #000;
+   font-size: 1.2em;
    text-decoration: none;
+   text-transform: uppercase;
    vertical-align: middle;
    cursor: pointer;
-   }
+}
 .button:hover {
-   border-top-color: #28597a;
-   background: #28597a;
+   border-top-color: #8C543B;
+   background: #8C543B;
    color: #ccc;
    }
 .button:active {
-   border-top-color: #1b435e;
-   background: #1b435e;
+   border-top-color: #ff6a00;
+   background: #ff6a00;
    }
+.button.disabled {
+   background: #ccc;
+   color: #808080;
+}
+.link_button {
+	text-transform: uppercase;
+	cursor: pointer;
+}
+.link_button:hover {
+	text-decoration: underline;
+}
 
 /* VALIDATION styles */
 input.form-control.error {

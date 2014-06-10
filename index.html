@@ -7,6 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Super Demo Pizza - The Best Pizza Anywhere!</title>
 
+		<!-- Google fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Neucha|Swanky+and+Moo+Moo' rel='stylesheet' type='text/css'>
+
         <!-- jQuery -->
         <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="js/jquery.validate.min.js"></script>
@@ -33,59 +36,60 @@
             <div id="content">
                 <div id="shopping_cart" class="side_content">
                     <h3>Shopping Cart</h3>
+					<span class="link_button clear_cart">Clear cart</span>
                     <ul id="shopping_cart_items">
                         <li id="empty_cart">No yummy pizzas in the cart. Yet.</li>
                     </ul>
                     <div class="button_container">
                         <span class="button checkout">Checkout</span>
+						<span class="button order_history">Show order history</span>
                     </div>
                 </div> <!-- END shopping_cart -->
-                <div id="order_history" class="hide">
-                    <div>
-                        <a id="show_order_history">Show order history</a>
-                    </div>
-                    <div class="history_data hide">
-                        <h3>Order history</h3>
-                        <ul>
-                            <li>No sinister pizza activity in the past.</li>
-                        </ul>
-                    </div>
-                </div>
                 <div id="pizza_menu" class="main_content">
                     <h3>Menu</h3>
                     <ul>
                         <li>
                             <div class="pizza">
+								<img src="img/pizza.png" alt="pizza" class="figure" />
                                 <h4>SuperPizza</h4>
+								<div class="price">6,60 €</div>
                                 <span class="button add_to_cart">Add to cart</span>
                             </div>
                         </li>
                         <li>
                             <div class="pizza">
+								<img src="img/pizza.png" alt="pizza" class="figure" />
                                 <h4>MegaPizza</h4>
+								<div class="price">6,60 €</div>
                                 <span class="button add_to_cart">Add to cart</span>
                             </div>
                         </li>
                         <li>
                             <div class="pizza">
+								<img src="img/pizza.png" alt="pizza" class="figure" />
                                 <h4>HyperPizza</h4>
+								<div class="price">6,60 €</div>
                                 <span class="button add_to_cart">Add to cart</span>
                             </div>
                         </li>
                         <li>
                             <div class="pizza">
+								<img src="img/pizza.png" alt="pizza" class="figure" />
                                 <h4>GigaPizza</h4>
+								<div class="price">6,60 €</div>
                                 <span class="button add_to_cart">Add to cart</span>
                             </div>
                         </li>
                         <li>
                             <div class="pizza">
+								<img src="img/pizza.png" alt="pizza" class="figure" />
                                 <h4>DemoPizza</h4>
+								<div class="price">5,00 €</div>
                                 <span class="button add_to_cart">Add to cart</span>
                             </div>
                         </li>
                     </ul>
-                </div>
+                </div> <!-- END pizza_menu -->
                 <div id="checkout" class="full_content">
                     <h3>Delivery Information</h3>
                     <form id="order_form" role="form" autocomplete="on">
@@ -115,20 +119,30 @@
                         </div>
                         <div class="form-group">
                             <label for="note">Note</label>
-                            <textarea id="note" name="form_note" class="form-control" rows="5" placeholder="Any notes for the pizza maker?"></textarea>
+                            <textarea id="note" name="form_note" class="form-control" rows="5" placeholder="Want some (or lots of) oregano? How about garlic, care for some? Send your additional requests to the pizza maker!"></textarea>
                         </div>
                         <input class="button place_order" type="submit" value="Place order">
                         <input class="button cancel_order" type="reset" value="Cancel order">
                     </form>
-                </div>
+                </div><!-- END checkout -->
                 <div id="order_confirmation" class="full_content">
                     <h3>And they will be delivered here:</h3>
                     <div id="confirmed_delivery_address"></div>
                     <div class="button_container">
-                        <span class="button complete_order">Return to front page</span>
-                        <span class="button cancel_order">Cancel order</span>
+                        <span class="button complete_order">Return to frontpage</span>
                     </div>
-                </div>
+                </div> <!-- END order_confirmation -->
+                <div id="order_history" class="full_content">
+                    <div class="history_data">
+                        <h3>Order history</h3>
+                        <ul id="order_history_items">
+                            <li id="empty_history">No suspicious pizza activity in the past.</li>
+                        </ul>
+						<div class="button_container">
+							<span class="button return_to_frontpage">Return to frontpage</span>
+						</div>
+                    </div>
+                </div> <!-- END order_history -->
             </div> <!-- END content -->
         </div> <!-- END page -->
     </body>
