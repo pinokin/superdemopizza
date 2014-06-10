@@ -47,7 +47,7 @@ $(function () {
 	});
 
 	// Order history
-	itemsOnPage = 2;
+	itemsOnPage = 5;
 	$('.order_history').click(function () {
 		orderHistory();
 	});
