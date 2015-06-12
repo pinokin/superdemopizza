@@ -1,7 +1,10 @@
 superdemopizza
 ==============
 
+Disclaimer: This is the starting point where I began my JavaScript exploration in 2014. As such this code has little or no value to any other developers, but I still want to keep it here to remind me, where I started from. :)
+
 A demo of a pizza ordering site
+===============================
 
 Shows an example how I would start building a javascript + HTML + CSS shopping cart feature.
 The style is deliberately sketchy to say "this is demo!".
